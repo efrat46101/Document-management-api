@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "09bd6e71-0180-4702-8ebb-d6bf4d2c5d2f",
+		"name": "final_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49625464",
+		"_collection_link": "https://efrat46101-7775951.postman.co/workspace/efrat's-Workspace~804c101a-80fc-4a90-841d-508a9fb55bc2/collection/49625464-09bd6e71-0180-4702-8ebb-d6bf4d2c5d2f?action=share&source=collection_link&creator=49625464"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/api/documents",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "123456",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"path\": \"/docs/work\", \r\n\"title\": \"class\",\r\n \"content\": \"Wellcome!\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/documents",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/documents",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "123456",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/documents",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/documents/5f140b79-45cd-4388-80ce-d35e2748f530/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "12345",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/documents/5f140b79-45cd-4388-80ce-d35e2748f530/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"documents",
+						"5f140b79-45cd-4388-80ce-d35e2748f530",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/documents/5f140b79-45cd-4388-80ce-d35e2748f530/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "12345",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"5f140b79-45cd-4388-80ce-d35e2748f530\",\r\n    \"author\": \"123456\",\r\n    \"path\": \"/docs/work\",\r\n    \"title\": \"class\",\r\n    \"content\": \"Wellcome! my name is efrat\",\r\n    \"createdAt\": \"2025-12-31T18:14:24.847Z\",\r\n    \"lastUpdatedAt\": \"2025-12-31T18:14:24.847Z\",\r\n    \"lastUpdatedBy\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/documents/5f140b79-45cd-4388-80ce-d35e2748f530/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"documents",
+						"5f140b79-45cd-4388-80ce-d35e2748f530",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/documents/83ca41a4-b729-499d-9299-5ee4e938c920/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "12345",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/documents/83ca41a4-b729-499d-9299-5ee4e938c920/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"documents",
+						"83ca41a4-b729-499d-9299-5ee4e938c920",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/documents/download/5f140b79-45cd-4388-80ce-d35e2748f530/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "123456",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/documents/download/5f140b79-45cd-4388-80ce-d35e2748f530/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"documents",
+						"download",
+						"5f140b79-45cd-4388-80ce-d35e2748f530",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/history",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "2158059",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/history",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/history",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "0556746101",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/history",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
