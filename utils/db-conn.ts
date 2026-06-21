@@ -1,6 +1,8 @@
 import { Db, MongoClient } from "mongodb";
+import { config } from "dotenv";
 
-const DB_URL = "mongodb+srv://app_user_new:8VT7N1JVqfSP30OP@cluster0.8nc8q9.mongodb.net/document?retryWrites=true&w=majority&appName=cluster0";
+config();
+
 const COMPANY_DB_NAME = "document";
 
 export default class DbConn {
@@ -9,6 +11,8 @@ export default class DbConn {
     constructor() { }
 
     async init() {
+        const DB_URL = process.env.MONGODB_URI;
+        if (!DB_URL) throw new Error("MONGODB_URI is not defined in environment variables.");
         this.connection = await MongoClient.connect(DB_URL);
     }
 
